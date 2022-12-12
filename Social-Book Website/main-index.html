@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main-style.css" />
+    <title>SocialBook</title>
+  </head>
+
+  <body>
+    <nav>
+     
+
+      <div class="nav-middle">
+        <a href="#" class="active">
+          <i class="fa fa-home"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa fa-user-friends"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa fa-play-circle"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa fa-users"></i>
+        </a>
+      </div>
+
+      <div class="nav-left">
+        
+        <input type="text" placeholder="Search Posts" />
+      </div>
+
+      <div class="nav-right">
+
+       
+
+        <span class="profile"></span>
+
+        <a href="#">
+          <i class="fa fa-bell"></i>
+        </a>
+
+        <a href="#">
+          <i  class="fas fa-ellipsis-h"></i>
+        </a>
+        <input type="submit"  name="submit" id="submit" value="Logout">
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="left-panel">
+        <ul>
+          <li>
+            <span class="profile"></span>
+            <p>Aziz Rehman</p>
+          </li>
+          <li>
+            <i class="fa fa-user-friends"></i>
+            <p>Friends</p>
+          </li>
+          <li>
+            <i class="fa fa-play-circle"></i>
+            <p>Videos</p>
+          </li>
+          <li>
+            <i class="fa fa-flag"></i>
+            <p>Pages</p>
+          </li>
+          <li>
+            <i class="fa fa-users"></i>
+            <p>Groups</p>
+          </li>
+          <li>
+            <i class="fa fa-bookmark"></i>
+            <p>Bookmark</p>
+          </li>
+          <li>
+            <i class="fab fa-facebook-messenger"></i>
+            <p>Inbox</p>
+          </li>
+          <li>
+            <i class="fas fa-calendar-week"></i>
+            <p>Events</p>
+          </li>
+          <li>
+            <i class="fa fa-bullhorn"></i>
+            <p>Ads</p>
+          </li>
+          <li>
+            <i class="fas fa-hands-helping"></i>
+            <p>Offers</p>
+          </li>
+          <li>
+            <i class="fas fa-briefcase"></i>
+            <p>Jobs</p>
+          </li>
+          <li>
+            <i class="fa fa-star"></i>
+            <p>Favourites</p>
+          </li>
+        </ul>
+
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Advance</a>
+          <a href="#">More</a>
+        </div>
+      </div>
+
+      <div class="middle-panel">
+        <div class="story-section">
+          <div class="status-wrapper">
+            <div class="status-card">
+              <div class="profile-pic"><img src="images/boy.jpg" alt="" /></div>
+              <p class="username">user_name_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic">
+                <img src="/images/girl.jpg" alt="" />
+              </div>
+              <p class="username">user_name_2</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic">
+                <img src="/images/girl_with_light.jpg" alt="" />
+              </div>
+              <p class="username">user_name_3</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic">
+                <img src="/images/model.jpg" alt="" />
+              </div>
+              <p class="username">user_name_4</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic">
+                <img src="/images/bk.png" alt="" />
+              </div>
+              <p class="username">user_name_5</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic">
+                <img src="/images/shoes.jpg" alt="" />
+              </div>
+              <p class="username">user_name_6</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic">
+                <img src="/images/boy.jpg" alt="" />
+              </div>
+              <p class="username">user_name_7</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic">
+                <img src="/images/" alt="" />
+              </div>
+              <p class="username">user_name_8</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="postii"></div>
+      <div id="firstpost">
+        <div class="post create">
+          <div class="post-top">
+            <div class="dp">
+              <img src="./images/girl.jpg" alt="" />
+            </div>
+            <input type="text" placeholder="What's in your mind, Aziz ?" />
+          </div>
+
+          <div class="post-bottom">
+            <div class="action">
+              <i class="fa fa-video"></i>
+              <span>Live video</span>
+            </div>
+            <div class="action">
+              <i class="fa fa-image"></i>
+              <span>Photo/Video</span>
+            </div>
+            <div class="action">
+              <i class="fa fa-smile"></i>
+              <span>Feeling/Activity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="cmntBocMain"
+          style="
+            position: sticky;
+            top:  0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgb(220, 215, 215);
+            opacity: 90%;
+            height: 100vh;
+            width: 50%;
+            display: none;
+          "
+        >
+          <div id="cmntBox"
+            style="
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              top: 30%;
+              width: 600px;
+              background-color: white;
+              padding: 30px;
+              margin: auto;
+              border-radius: 20px;
+            "
+          >
+            <span
+              style="
+                background-color: blue;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+                margin-bottom: 10px;
+              "
+              ><span>X</span></span
+            >
+            <textarea
+            id="textEra"
+              style="
+                height: 200px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+              "
+              placeholder="write comment"
+            ></textarea>
+            <button id="submitBtn"
+              style="
+                padding: 10px;
+                border: none;
+                background-color: blue;
+                cursor: pointer;
+                color: white;
+              "
+            >
+              Post Comment
+            </button>
+          </div>
+        </div>
+        <div class="post">
+       
+
+          <div id="postcontent">
+          
+          </div>
+
+          <div class="post-bottom">
+            <div class="action">
+              <i class="far fa-thumbs-up"></i>
+              <span>Like</span>
+            </div>
+            <div class="action">
+              <i class="far fa-comment"></i>
+              <span>Comment</span>
+            </div>
+            <div class="action">
+              <i class="fa fa-share"></i>
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="right-panel">
+        <div class="pages-section">
+          <h4>Your pages</h4>
+          <a class="page" href="#">
+            <div class="dp">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <p class="name">SocialBook</p>
+          </a>
+
+          <a class="page" href="#">
+            <div class="dp">
+              <img src="./images/dp.jpg" alt="" />
+            </div>
+            <p class="name">Social Posts</p>
+          </a>
+        </div>
+
+        <div class="friends-section">
+          <h4>Friends</h4>
+          <a class="friend" href="#">
+            <div class="dp">
+              <img src="./images/dp.jpg" alt="" />
+            </div>
+            <p class="name">Henry Mosely</p>
+          </a>
+
+          <a class="friend" href="#">
+            <div class="dp">
+              <img src="./images/shoes.jpg" alt="" />
+            </div>
+            <p class="name">George</p>
+          </a>
+
+          <a class="friend" href="#">
+            <div class="dp">
+              <img src="./images/boy.jpg" alt="" />
+            </div>
+            <p class="name">Bilal</p>
+          </a>
+
+          <a class="friend" href="#">
+            <div class="dp">
+              <img src="./images/model.jpg" alt="" />
+            </div>
+            <p class="name">Ayesha Khan</p>
+          </a>
+
+          <a class="friend" href="#">
+            <div class="dp">
+              <img src="./images/boy.jpg" alt="" />
+            </div>
+            <p class="name">Justin Bieber</p>
+          </a>
+
+          <a class="friend" href="#">
+            <div class="dp">
+              <img src="./images/dp.jpg" alt="" />
+            </div>
+            <p class="name">Ramesh GC</p>
+          </a>
+
+          <a class="friend" href="#">
+            <div class="dp">
+              <img src="./images/model.jpg" alt="" />
+            </div>
+            <p class="name">Sajita Gurung</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+    
+  </body>
+</html>
